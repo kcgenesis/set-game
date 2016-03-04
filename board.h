@@ -4,19 +4,29 @@
 #include <vector>
 #include <string>
 
+
+//constitutes the card, deck, and board subclasses.
+
+
+
+
+
+
 class board {
 
 	public:
 		
 		board();
-		void deal();//fill missing spots in array 
-		void shuffle();
+		
+		int deal();  //fill missing spots in array 
+		int shuffle();
 		void print();
 
 	private:
 		class card {
 			public:
 				card(int,int,int,int);
+				
 				void print();
 				bool faceup;
 				int id;

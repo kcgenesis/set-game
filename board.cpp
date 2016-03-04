@@ -18,6 +18,8 @@ void board::card::print()
 			 	<< shading <<"]";
 }
 
+//initialize deck
+
 board::board()
 {
 	int cardnum = 1;
