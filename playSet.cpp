@@ -1,4 +1,5 @@
 #include "board.h"
+//#include "deck.h"
 #include <ctime>
 #include <iostream>
 #include <fstream>
@@ -11,14 +12,16 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
 	board myboard;
-	myboard.shuffle();
-	myboard.deal();
 	myboard.print();
-
-
+	myboard.fill();
+	myboard.print();
+	myboard.mydeck.print();
+	//myboard.mydeck.shuffle();
+	//myboard.mydeck.print();
+	//myboard.fill();
+	//myboard.print();
 	return 0;
 }
 
