@@ -15,11 +15,13 @@ using namespace std;
 int main() {
 	board myboard;
 	myboard.print();
+	myboard.mydeck.shuffle();
+	myboard.mydeck.print();
+
 	myboard.fill();
 	myboard.print();
 	myboard.mydeck.print();
-	//myboard.mydeck.shuffle();
-	//myboard.mydeck.print();
+
 	//myboard.fill();
 	//myboard.print();
 	return 0;

@@ -15,6 +15,9 @@ class deck {
 		//shuffles deck
 		void shuffle();
 		void print();
+
+		
+		
 	private:
 		std::vector<card*> cards;
 };

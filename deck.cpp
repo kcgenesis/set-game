@@ -29,8 +29,8 @@ deck::deck() {
 card* deck::deal(){
 	card* rear = cards.back();
 	if(rear) {
-		cout<<"POPPING BACK"<<endl;
-		cards.pop_back();	
+		
+		cards.pop_back();
 	}
 	return rear;
 	
@@ -54,10 +54,13 @@ void deck::shuffle(){
 }
 
 void deck::print(){
-	for (int i=0;i<81;i++) {
+	cout<<"--DECK--"<<endl;
+	for (uint i=0;i<cards.size();i++) {
 		cards[i]->print();
 		cout<<endl;
 	}
+	cout<<"--END DECK--\n"<<endl;
+
 }
 
 

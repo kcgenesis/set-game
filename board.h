@@ -12,7 +12,7 @@
 class board {
 	public:
 		board();
-		void fill();
+		int fill();
 		void print();
 		deck mydeck;
 	private:
