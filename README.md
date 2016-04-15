@@ -1,3 +1,3 @@
 # set-game
-school project
+school project:
 game logic code in C++
